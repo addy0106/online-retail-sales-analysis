@@ -1,102 +1,76 @@
 # Online Retail Sales Analysis
 
-## Project Overview
-This project analyzes an online retail dataset using:
-
-- Python
-- DuckDB
-- SQL
-- Pandas
-- Matplotlib
-- Seaborn
-
-The goal was to explore:
-- Monthly revenue trends
-- Top-selling products
-- Country-wise sales
-- Customer purchasing behavior
+Retail sales analysis project using Python, SQL, DuckDB, Pandas, Matplotlib, and Seaborn.
 
 ---
 
-## Dataset
-Online Retail Dataset containing transaction-level sales data.
+## Project Overview
 
-Columns include:
-- InvoiceNo
-- StockCode
-- Description
-- Quantity
-- InvoiceDate
-- UnitPrice
-- CustomerID
-- Country
+This project analyzes an online retail dataset containing over 500,000 transactions.
+
+The goal was to:
+- Clean and explore the data
+- Analyze sales trends
+- Identify top-performing countries
+- Find best-selling products
+- Discover high-value customers
+- Create visualizations for business insights
 
 ---
 
 ## Technologies Used
+
 - Python
 - DuckDB
 - SQL
 - Pandas
 - Matplotlib
 - Seaborn
-- VS Code
+- Git & GitHub
 
 ---
 
-## Analysis Performed
+## Files Included
 
-### 1. Data Quality Check
-- Verified dataset structure
-- Checked total rows and columns
+| File | Description |
+|------|-------------|
+| 01_data_check.py | Initial dataset inspection |
+| 02_data_cleaning.py | Data cleaning and validation |
+| 03_country_sales.py | Revenue analysis by country |
+| 04_monthly_sales.py | Monthly sales trend analysis |
+| 05_top_products.py | Top-selling products analysis |
+| 06_customer_analysis.py | High-value customer analysis |
+| 07_country_chart.py | Country revenue visualization |
 
-### 2. Data Cleaning
-- Removed invalid/missing values
-- Standardized data types
+---
 
-### 3. Country Sales Analysis
-- Calculated revenue by country
-- Identified top-performing regions
+## Key Insights
 
-### 4. Monthly Revenue Trends
-- Aggregated monthly sales revenue
-- Observed seasonal growth patterns
-
-### 5. Product Analysis
-- Identified top-selling products
-- Measured quantity sold and revenue
-
-### 6. Customer Analysis
-- Found highest-value customers
-- Measured repeat purchasing behavior
+- United Kingdom generated the highest revenue
+- Monthly sales peaked in late 2011
+- Several products consistently dominated sales volume
+- A small number of customers generated significant revenue
 
 ---
 
 ## Visualization
 
 ### Top 10 Countries by Revenue
+
 ![Country Sales](country_sales.png)
 
 ---
 
-## Key Insights
-- United Kingdom generated the highest revenue.
-- Several products contributed disproportionately to total sales.
-- Revenue peaked strongly during late 2011.
-- A small number of customers drove large portions of revenue.
+## Dataset
+
+Dataset used:
+Online Retail Dataset (UCI Machine Learning Repository)
 
 ---
 
-## Project Structure
+## How to Run
 
-```text
-01_data_check.py
-02_data_cleaning.py
-03_country_sales.py
-04_monthly_sales.py
-05_top_products.py
-06_customer_analysis.py
-07_country_chart.py
-online_retail.csv
-country_sales.png
-README.md
+Install dependencies:
+
+```bash
+pip install duckdb pandas matplotlib seaborn
